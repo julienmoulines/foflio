@@ -1,0 +1,49 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#project-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%; /* Ajustez en fonction du nombre total de slides */
+    height: 100%; /* Assurez-vous que le conteneur prend toute la hauteur de la fenêtre */
+}
+
+.project-slide {
+    width: 50%; /* Chaque slide a une largeur de 50% du conteneur */
+    display: flex;
+    justify-content: center; /* Centre horizontalement les projets dans le slide */
+    align-items: center; /* Centre verticalement les projets dans le slide */
+    height: 100%; /* Assurez-vous que le slide prend toute la hauteur du conteneur */
+}
+
+.project {
+    width: 45%; /* Chaque projet prend une certaine largeur du slide */
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu du projet verticalement */
+    align-items: center; /* Centre le contenu du projet horizontalement */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 20px;
+}
+
+#prevButton {
+    left: 20px;
+}
+
+#nextButton {
+    right: 20px;
+}

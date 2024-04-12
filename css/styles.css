@@ -47,3 +47,8 @@ button {
 #nextButton {
     right: 20px;
 }
+
+.project img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du projet */
+    height: auto; /* Garde les proportions de l'image intactes */
+}

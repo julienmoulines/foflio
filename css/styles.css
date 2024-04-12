@@ -49,6 +49,10 @@ button {
 }
 
 .project img {
-    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du projet */
-    height: auto; /* Garde les proportions de l'image intactes */
+    max-width: 100%; /* limite la largeur à la largeur du conteneur */
+    max-height: 500px; /* limite la hauteur à 500px ou à toute autre valeur que vous désirez */
+    height: auto; /* assure que la hauteur change proportionnellement avec la largeur */
+    width: auto; /* assure que la largeur change proportionnellement avec la hauteur */
+    object-fit: cover; /* couvre le conteneur, coupe les parties de l'image qui débordent */
+
 }
